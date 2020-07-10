@@ -44,6 +44,20 @@ schema:
     primary_key:
       value: false
       discard: true
+  - nullable:
+      value: true
+      discard: true
+    name: "job_id"
+    validate: false
+    partition_column: false
+    data_type:
+      value: "string"
+      discard: true
+    transform_sql:
+      value: "${job_instance_id}"
+    primary_key:
+      value: false
+      discard: true
 target:
   endpoint: "lo_hive"
   properties:
