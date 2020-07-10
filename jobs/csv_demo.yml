@@ -3,7 +3,7 @@ job:
   type: "ingestion"
   tags:
   - "csv_to_json_test"
-  description: "This job converts data from CSV file to JSON file and validates id and age column's datatype and null value..."
+  description: "This job converts data from CSV file to JSON file and validates id and age column's datatype and null value....."
 source:
   endpoint: "lo_lfs"
   properties:
