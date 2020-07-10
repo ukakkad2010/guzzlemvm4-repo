@@ -1,0 +1,54 @@
+version: 1
+context_stage_mappings:
+- context:
+    system: "TEST1"
+  rerun_batch: false
+  period: 1
+  stages:
+  - name: "STG"
+    rerun_batch: true
+    partial_load: false
+    job_groups:
+    - "JG1_SUCCESS"
+- context:
+    system: "TEST2"
+  rerun_batch: false
+  period: 1
+  stages:
+  - name: "STG"
+    rerun_batch: false
+    partial_load: false
+    job_groups:
+    - "JG1_SUCCESS"
+  - name: "FND"
+    rerun_batch: false
+    partial_load: false
+    job_groups:
+    - "JG2"
+- stages:
+  - name: "STG"
+    rerun_batch: false
+    partial_load: false
+    job_groups:
+    - "JG1_SUCCESS"
+  - name: "FND"
+    rerun_batch: false
+    partial_load: false
+    job_groups:
+    - "JG2"
+  rerun_batch: false
+  context:
+    system: "TEST3"
+  stage_pairs:
+  - "STG,FND"
+  period: 1
+- context:
+    system: "TEST4"
+  rerun_batch: false
+  period: 1
+  stages:
+  - name: "STG"
+    rerun_batch: false
+    partial_load: false
+    job_groups:
+    - "JG1_SUCCESS"

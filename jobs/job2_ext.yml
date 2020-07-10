@@ -1,0 +1,7 @@
+version: 1
+job:
+  type: "external"
+config:
+  endpoint: "lo_local_shell"
+  properties:
+    script: " sleep 5 && ls -ltr /guzzle/logs > /tmp/abc.log"

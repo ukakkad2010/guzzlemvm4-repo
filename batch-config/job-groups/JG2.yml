@@ -1,0 +1,7 @@
+description: ""
+version: 1
+properties: {}
+jobs:
+- "job1_ext"
+- "job2_ext"
+parallel: 1
