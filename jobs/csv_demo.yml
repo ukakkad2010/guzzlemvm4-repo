@@ -10,10 +10,11 @@ source:
     format: "delimited"
     charset: "UTF-8"
     format_properties:
-      column_delimiter: ","
+      multiline: true
       quote_delimiter: "\""
-      contains_header: true
+      column_delimiter: ","
       escape_char: "\\\\"
+      contains_header: true
     source_file_pattern: "csv/users*.csv"
 schema:
   strict_schema_check: true
