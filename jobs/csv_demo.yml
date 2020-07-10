@@ -16,7 +16,10 @@ source:
       contains_header: true
     source_file_pattern: "csv/users*.csv"
     charset: "UTF-8"
-    partial_load: true
+    partial_load: false
+    control_file:
+      extension: "ctl"
+      path: "abc.ctl"
 schema:
   strict_schema_check: true
   schema_derivation_strategy: "source"
