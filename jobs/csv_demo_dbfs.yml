@@ -47,7 +47,7 @@ schema:
   - nullable:
       value: true
       discard: true
-    name: "job_id"
+    name: "job_id123"
     validate: false
     partition_column: false
     data_type:
